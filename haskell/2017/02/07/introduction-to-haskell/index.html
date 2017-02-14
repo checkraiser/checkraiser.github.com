@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Introduction to Haskell</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="not . not = Id">
+    <link rel="canonical" href="https://checkraiser.github.io/haskell/2017/02/07/introduction-to-haskell/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/pygments.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css">
+</head>
+
+
+    <body>
+
+      <div class="container">
+
+        <div class="header">
+    <h1>
+        <a style="color: #000;" href="/">1+1 = 2</a>
+    </h1>
+    <p class="sub">
+        not . not = Id
+    </p>
+
+    <div class="menu">
+        <ul class="navlist">
+            
+            <li>
+                <a class="page-link" href="/about">abt</a>
+            </li>
+            
+            <li>
+                <a class="page-link" href="http://twitter.com/revskill">twt</a>
+            </li>
+            
+            <li>
+                <a class="page-link" href="http://github.com/checkraiser">git</a>
+            </li>
+            
+            <li>
+                <a class="page-link" href="/feed.xml">rss</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+        <div class="post">
+
+  <header class="post-header">
+    <h1>Introduction to Haskell</h1>
+  </header>
+
+  <p class="meta">Feb 7, 2017</p>
+
+  <article class="post-content">
+  <h2 id="our-first-function">Our first function:</h2>
+
+<p>We define our first function, using the function <code>product</code></p>
+
+<figure class="highlight"><pre><code class="language-haskell" data-lang="haskell"><span></span><span class="nf">fac</span> <span class="n">n</span> <span class="ow">=</span> <span class="n">product</span> <span class="p">[</span><span class="mi">1</span><span class="o">..</span><span class="n">n</span><span class="p">]</span></code></pre></figure>
+
+<h2 id="running-a-program">Running a program:</h2>
+
+<p>We can place function definitions in a file and load file with the <code>:l</code> command:</p>
+
+<pre><code>:l MyFirstHaskellModule.hs
+</code></pre>
+
+<p>Once loaded we can call the function</p>
+
+<pre><code>? fac 6
+720
+</code></pre>
+
+<h2 id="using-functions">Using functions:</h2>
+
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi><mo>=</mo><mo>±</mo><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">
+c = \pm\sqrt{a^2 + b^2}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.913389em;"></span><span class="strut bottom" style="height:1.04em;vertical-align:-0.12661100000000008em;"></span><span class="base textstyle uncramped"><span class="mord mathit">c</span><span class="mrel">=</span><span class="mord">±</span><span class="sqrt mord"><span class="sqrt-sign" style="top:-0.07338899999999993em;"><span class="style-wrap reset-textstyle textstyle uncramped">√</span></span><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span><span class="mord textstyle cramped"><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:-0.289em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mbin">+</span><span class="mord"><span class="mord mathit">b</span><span class="vlist"><span style="top:-0.289em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span><span style="top:-0.8333889999999999em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span><span class="reset-textstyle textstyle uncramped sqrt-line"></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span>​</span></span></span></span></span></span></p>
+
+<p><img src="/uml/e7a9dc54b085a1f12625b403424c498d.svg" alt="PlantUML SVG diagram" class="plantuml" /></p>
+
+  </article>
+
+</div>
+
+
+        <footer class="site-footer">
+<a href="https://checkraiser.github.io">A blog</a> by <a href="http://github.com/checkraiser">checkraiser</a>
+</footer>
+
+
+      </div>
+
+    </body>
+</html>

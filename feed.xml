@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1+1 = 2</title>
+    <description>not . not = Id</description>
+    <link>https://checkraiser.github.io/</link>
+    <atom:link href="https://checkraiser.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Introduction to Haskell</title>
+        <description>&lt;h2 id=&quot;our-first-function&quot;&gt;Our first function:&lt;/h2&gt;
+
+&lt;p&gt;We define our first function, using the function &lt;code&gt;product&lt;/code&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-haskell&quot; data-lang=&quot;haskell&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fac&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;product&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;running-a-program&quot;&gt;Running a program:&lt;/h2&gt;
+
+&lt;p&gt;We can place function definitions in a file and load file with the &lt;code&gt;:l&lt;/code&gt; command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:l MyFirstHaskellModule.hs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once loaded we can call the function&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;? fac 6
+720
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;using-functions&quot;&gt;Using functions:&lt;/h2&gt;
+
+&lt;p&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mo&gt;±&lt;/mo&gt;&lt;msqrt&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;msup&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;/msqrt&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;
+c = \pm\sqrt{a^2 + b^2}
+&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.913389em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;strut bottom&quot; style=&quot;height:1.04em;vertical-align:-0.12661100000000008em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;base textstyle uncramped&quot;&gt;&lt;span class=&quot;mord mathit&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;±&lt;/span&gt;&lt;span class=&quot;sqrt mord&quot;&gt;&lt;span class=&quot;sqrt-sign&quot; style=&quot;top:-0.07338899999999993em;&quot;&gt;&lt;span class=&quot;style-wrap reset-textstyle textstyle uncramped&quot;&gt;√&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist&quot;&gt;&lt;span style=&quot;top:0em;&quot;&gt;&lt;span class=&quot;fontsize-ensurer reset-size5 size5&quot;&gt;&lt;span style=&quot;font-size:1em;&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord textstyle cramped&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathit&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;vlist&quot;&gt;&lt;span style=&quot;top:-0.289em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;fontsize-ensurer reset-size5 size5&quot;&gt;&lt;span style=&quot;font-size:0em;&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;reset-textstyle scriptstyle cramped&quot;&gt;&lt;span class=&quot;mord mathrm&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;baseline-fix&quot;&gt;&lt;span class=&quot;fontsize-ensurer reset-size5 size5&quot;&gt;&lt;span style=&quot;font-size:0em;&quot;&gt;​&lt;/span&gt;&lt;/span&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mbin&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathit&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;vlist&quot;&gt;&lt;span style=&quot;top:-0.289em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;fontsize-ensurer reset-size5 size5&quot;&gt;&lt;span style=&quot;font-size:0em;&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;reset-textstyle scriptstyle cramped&quot;&gt;&lt;span class=&quot;mord mathrm&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;baseline-fix&quot;&gt;&lt;span class=&quot;fontsize-ensurer reset-size5 size5&quot;&gt;&lt;span style=&quot;font-size:0em;&quot;&gt;​&lt;/span&gt;&lt;/span&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-0.8333889999999999em;&quot;&gt;&lt;span class=&quot;fontsize-ensurer reset-size5 size5&quot;&gt;&lt;span style=&quot;font-size:1em;&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;reset-textstyle textstyle uncramped sqrt-line&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;baseline-fix&quot;&gt;&lt;span class=&quot;fontsize-ensurer reset-size5 size5&quot;&gt;&lt;span style=&quot;font-size:1em;&quot;&gt;​&lt;/span&gt;&lt;/span&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uml/e7a9dc54b085a1f12625b403424c498d.svg&quot; alt=&quot;PlantUML SVG diagram&quot; class=&quot;plantuml&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 07 Feb 2017 00:00:00 +0700</pubDate>
+        <link>https://checkraiser.github.io/haskell/2017/02/07/introduction-to-haskell/</link>
+        <guid isPermaLink="true">https://checkraiser.github.io/haskell/2017/02/07/introduction-to-haskell/</guid>
+      </item>
+    
+  </channel>
+</rss>
